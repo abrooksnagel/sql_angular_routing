@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL-Angular Routing</title>
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/styles.css" rel="stylesheet">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <base href="/">
+</head>
+<body>
+
+    <header>
+        <a href="/addresses"><button class="addresses">Addresses</button></a>
+        <a href="/orders"><button class="orders">Orders</button></a>
+    </header>
+
+
+    <div ng-view></div>
+
+
+</body>
+</html>

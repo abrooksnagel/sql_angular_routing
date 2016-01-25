@@ -1,0 +1,11 @@
+<select ng-model="name_id">
+    <option ng-repeat="name in names" value={{name.id}}>{{name.name}}</option>
+</select>
+
+
+<button ng-click="getAddress()">Submit</button>
+
+<h3>User Address:</h3>
+<p ng-repeat="address in addresses" class="well">{{address.address_type}}</br>
+              {{address.address_street}}</br>
+{{address.address_city + ", " + address.address_state + " " + address.address_zip}}</p>

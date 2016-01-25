@@ -1,0 +1,20 @@
+body {
+    background-color: darkorange;
+    padding: 15px;
+}
+
+input, select, .well{
+    background-color: lightgray;
+}
+
+header {
+    padding: 10px;
+}
+
+/*select {*/
+    /*background-color: lightgray;*/
+/*}*/
+
+/*.well {*/
+    /*background-color: lightgray;*/
+/*}*/

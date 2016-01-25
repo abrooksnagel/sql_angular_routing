@@ -1,0 +1,25 @@
+<select ng-model="name_id">
+    <option ng-repeat="name in names" value={{name.id}}>{{name.name}}</option>
+</select>
+
+
+<label>Choose a start date</label>
+<input type="date" name="Start Date" ng-model="start_date">
+<label>Choose an end date</label>
+<input type="date" name="End Date" ng-model="end_date">
+
+
+
+<button ng-click="getOrder()">Submit</button>
+
+<h3>User Orders:</h3>
+<p ng-repeat="order in orders" class="well">User Name: {{order.name}}</br>
+                                Order Number: {{order.order_id}}</br>
+                                Order Shipping Address: {{order.address_street}}</br>
+    {{order.address_city + ", " + order.address_state + " " + order.address_zip}}</br>
+                                Order Amount: ${{order.amount}}</br>
+                                Order Date: {{order.order_date | date}}</p>
+
+<!--ng-change allows something to happen when a change occurs, for example, a dropdown can fire a function when something is chosen-->
+
+<p>Orders Total: ${{orderTotal.toFixed(2)}}</p>
